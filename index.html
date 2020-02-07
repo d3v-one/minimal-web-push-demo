@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Web Push Demo</title>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="serviceworker" href="sw.js">
+	<link rel="manifest" href="manifest.json">
+	<script type="text/javascript" src="main.js"></script>
+</head>	
+<style>
+	body {
+		font-size: 16px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	h4 {
+		margin: 24px 0 8px 0;
+	}
+	#info_subscription, #push_text, #push_result { 
+		width:100%; 
+		height:10em;
+		box-sizing: border-box; 
+	}
+	#info_subscription { 
+		height:10em;
+	}
+	#push_text { 
+		height:4em;
+	}
+	#push_result { 
+		height:3em;
+	}
+	button {
+		padding: 9px 20px;
+    line-height: 14px;
+    font-size: 14px;
+		font-weight: bold;
+		background-color: #0078d7;
+    color: #ffffff;
+		border-radius: 2px;
+		cursor: pointer;
+	}
+	button:disabled {
+		background-color: #ddd;
+		cursor: auto;
+	}
+	#keys {
+		display: grid;
+		grid-template-columns: auto 3fr;
+		border: 1px solid #ccc;
+		background-color: #eee;
+	}
+	#keys div {
+		font-size: 16px;
+		white-space: nowrap;
+		padding: 3px 5px;
+	}
+</style>
+<body>
+
+<h4>Push Subscription Data</h4>
+<textarea id="info_subscription"></textarea>
+<button id="btn_subscribe">Subscribe to Push</button>
+<button id="btn_unsubscribe">Unsubscribe from Push</button>
+
+<h4>Push Message Text</h4>
+<textarea id="push_text"></textarea>
+<button id="btn_push">Send Push Message</button>
+
+<h4>Push Result</h4>
+<textarea id="push_result" readonly></textarea>
+
+<h4>The following VAPID keys are used in this Demo:</h4>
+<div id="keys">
+<div>Public Key:</div>
+<div>BIm2PpzmeMy3pe_VkzyP8Yq-iqG8ay0qLBGcJZNXnq5lOKu1fAyY9xQ2PK2KQjzWulmKu8IzBLmut276h4tIw5k</div>
+<div>Private Key:</div>
+<div>TJI7HAfEw_BEQZj9ea4KxUJZ7Gj5PypzKBbM5-TZtuo</div>
+</div>
+
+</body>
+</html>
+
