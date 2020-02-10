@@ -1,23 +1,4 @@
 
-/*
-function displayNotification() {
-	if (Notification.permission === 'granted') {
-		navigator.serviceWorker.getRegistration()
-		.then(reg => {
-			reg.showNotification('Hello world!', options);
-		});
-	}
-}
-*/
-// https://www.youtube.com/watch?v=c25PDH7ZJfk
-
-// Advanced Progressive Web Apps: Push notifications under control | Christian Liebel
-// https://www.youtube.com/watch?v=fKDdulqFGSU
-
-// Secure VAPID key generator: https://tools.reactpwa.com/vapid
-// Push companion: https://pwapraxis-push.glitch.me/
-// https://www.npmjs.com/package/web-push
-
 const applicationServerKey = "BIm2PpzmeMy3pe_VkzyP8Yq-iqG8ay0qLBGcJZNXnq5lOKu1fAyY9xQ2PK2KQjzWulmKu8IzBLmut276h4tIw5k";
 
 var json_subscription = null;
