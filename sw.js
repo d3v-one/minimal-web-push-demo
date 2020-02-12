@@ -37,6 +37,7 @@ self.addEventListener('push', event => {
 			icon: "https://d3v.one/apps/pwa/push/images/d3v.png",
 			vibrate: [100, 50, 100],
 			data: { ourKey: 1 },
+			requireInteraction: true,
 			actions: [
 				{action: 'go', title: 'go to site'},
 			]
