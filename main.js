@@ -16,7 +16,7 @@ function update_subscription_info(json) {
 		btn_unsubscribe.disabled = true;
 		btn_push.disabled = true;
 	} else {
-		info_subscription.value = json;
+		info_subscription.value = "const pushSubscription = " + json;
 		btn_subscribe.disabled = true;
 		btn_unsubscribe.disabled = false;
 		btn_push.disabled = false;
